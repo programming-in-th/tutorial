@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-10-10 Thu 23:28 -->
+<!-- 2019-10-10 Thu 23:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Strings</title>
@@ -265,9 +265,9 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Strings</h1>
-<div id="outline-container-org11806ab" class="outline-2">
-<h2 id="org11806ab">Topics List</h2>
-<div class="outline-text-2" id="text-org11806ab">
+<div id="outline-container-org545d701" class="outline-2">
+<h2 id="org545d701">Topics List</h2>
+<div class="outline-text-2" id="text-org545d701">
 <p>
 Strings
 </p>
@@ -276,21 +276,21 @@ Strings
 <ul class="org-ul">
 <li>Guide to polynomial hashing: <a href="https://www.mii.lt/olympiads_in_informatics/pdf/INFOL119.pdf">Link</a></li>
 <li>Simple polynomial hashing guidelines: <a href="https://codeforces.com/blog/entry/52697">Link</a></li>
-<li>Why picking \(2^64\) as a modulo is a bad idea: <a href="https://codeforces.com/blog/entry/4898">Link</a></li>
+<li>Why picking \(2^{64}\) as a modulo is a bad idea: <a href="https://codeforces.com/blog/entry/4898">Link</a></li>
 </ul></li>
 <li>KMP
 <ul class="org-ul">
 <li>TopCoder explanation: scroll down to KMP section at <a href="https://www.topcoder.com/community/competitive-programming/tutorials/introduction-to-string-searching-algorithms/">Link</a></li>
 <li>Johnny Ho's explanation: scroll down to his answer at <a href="https://www.quora.com/Why-is-the-time-complexity-of-the-Knuth-Morris-Pratt-algorithm-O-n">Link</a></li>
 </ul></li>
-<li>Suffix arrays: <a href="#orgb03f9db">See below</a></li>
+<li>Suffix arrays: <a href="#org0f0bb27">See below</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb774529" class="outline-2">
-<h2 id="orgb774529"><a id="orgb03f9db"></a>Suffix arrays</h2>
-<div class="outline-text-2" id="text-orgb774529">
+<div id="outline-container-org37df25f" class="outline-2">
+<h2 id="org37df25f"><a id="org0f0bb27"></a>Suffix arrays</h2>
+<div class="outline-text-2" id="text-org37df25f">
 <p>
 A suffix array is a lexicographically sorted array of all of a string's suffixes. In order to save space, we usually only store the first index of the suffix rather than the actual string representation of the suffix.
 </p>
@@ -300,9 +300,9 @@ LCP stands for the longest common prefix of two strings, which indicates the max
 </p>
 </div>
 
-<div id="outline-container-org4feca08" class="outline-3">
-<h3 id="org4feca08">Suffix Array Construction with Prefix Doubling</h3>
-<div class="outline-text-3" id="text-org4feca08">
+<div id="outline-container-orgf91b26d" class="outline-3">
+<h3 id="orgf91b26d">Suffix Array Construction with Prefix Doubling</h3>
+<div class="outline-text-3" id="text-orgf91b26d">
 <p>
 When the array of strings is composed of only suffixes, a very beneficial property manifests. Assuming the suffix array is already sorted by the first \(2^i\) cells, we need to further sort it by the <b><b>next</b></b> (not last) \(2^i\) cells. However, the order of the next \(2^i\) cells is already known from our previous work because it is, itself, a suffix. Therefore, we can keep on doubling the prefix and sort it by the order of the last \(2^i\) cells.
 </p>
@@ -330,9 +330,9 @@ When the array of strings is composed of only suffixes, a very beneficial proper
 </div>
 </div>
 
-<div id="outline-container-org0deae2c" class="outline-3">
-<h3 id="org0deae2c">Kasai's algorithm</h3>
-<div class="outline-text-3" id="text-org0deae2c">
+<div id="outline-container-org8f40cc6" class="outline-3">
+<h3 id="org8f40cc6">Kasai's algorithm</h3>
+<div class="outline-text-3" id="text-org8f40cc6">
 <p>
 Observation: given two suffixes with positions in the <b><b>suffix array</b></b> \(i\), \(i+1\) = \(sa[i]\), \(sa[i+1]\) respectively and \(LCP(sa[i], sa[i+1]) > 0\), if we remove the first character of both \(sa[i]\) and \(sa[i+1]\), then the new \(LCP(sa[j], sa[j+1]) \geq LCP(sa[i], sa[i+1]) - 1\)
 </p>
