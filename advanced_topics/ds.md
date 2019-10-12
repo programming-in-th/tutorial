@@ -1,0 +1,29 @@
+# Advanced Data Structures
+
+- Segment trees
+  - Iterative version: [Link](https://codeforces.com/blog/entry/18051)
+  - Binary search in $O(\log n)$ as opposed to $O(\log^2 n)$ on segment tree: See [Solution for Codeforces 786C](https://codeforces.com/contest/786/submission/28673373)
+  - Full explanation (including persistency, 2D, lazy propagation): [Link](https://cp-algorithms.com/data_structures/segment_tree.html)
+  - Persistent segment tree problems: [Link](https://codeforces.com/blog/entry/56880)
+- Fenwick trees
+  - Traditional Fenwick trees: [Link](https://www.hackerearth.com/practice/notes/binary-indexed-tree-or-fenwick-tree/)
+  - Fenwick trees with range updates and point queries: [Link](https://stackoverflow.com/questions/27875691/need-a-clear-explanation-of-range-updates-and-range-queries-binary-indexed-tree)
+  - Binary search in $O(\log n$) as opposed to $O(\log^2 n)$ on Fenwick tree
+    - sdnr1's explanation: [Link](https://codeforces.com/blog/entry/61364)
+    - adamant's explanation: [Link](https://codeforces.com/blog/entry/11275)
+- Sparse tables: [Link](https://brilliant.org/wiki/sparse-table/)
+- Merge sort trees: [Link](https://discuss.codechef.com/t/merge-sort-tree-tutorial/14277)
+- Wavelet trees
+  - Paper: [Link](https://ioinformatics.org/journal/v10_2016_19_37.pdf)
+  - Rachit Jain's explanation and implementation: [Link](http://rachitiitr.blogspot.com/2017/06/wavelet-trees-wavelet-trees-editorial.html)
+- Treaps
+  - Quora part 1: [Link](https://www.quora.com/q/threadsiiithyderabad/Treaps-One-Tree-to-Rule-em-all-Part-1)
+  - Quora part 2: [Link](https://www.quora.com/q/threadsiiithyderabad/Treaps-One-Tree-to-Rule-em-all-Part-2)
+- Sqrt decomposition on arrays (including Mo's algorithm): [Link](https://cp-algorithms.com/data_structures/sqrt_decomposition.html)
+- Sqrt decomposition on queries: [Link](https://codeforces.com/blog/entry/15406?#comment-203308)
+- Mo's algorithm with updates
+  - Video by Gaurav Sen: [Link](https://www.youtube.com/watch?v=gUpfwVRXhNY)
+  - XXXXXXXX - Sum of Distinct Numbers on SPOJ: [Link](https://www.spoj.com/problems/XXXXXXXX/)
+  - Implementation of XXXXXXXX: [Link](https://github.com/szawinis/CompetitiveProgramming/blob/master/SPOJ/XXXXXXXX.cpp)
+- Link cut trees: [Link](https://www.youtube.com/watch?v=XZLN6NxEQWo)
+- vEB trees: [Link](https://www.youtube.com/watch?v=hmReJCupbNU)
