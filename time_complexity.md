@@ -34,7 +34,7 @@ for(int i = 1; i <= n; ++i) {
 
 ### Order of magnitude
 
-time complexity ไม่ได้บอกเวลาที่แน่ชัดในการรัน แต่บอกแค่เวลาคร่าวๆ ในตัวอย่างถัดไป โค้ดจะรันโดยใช้เวลา $3n$, $n+5$, $\ceil{n/2}$ แต่ time complexity ยังเป็น $O(n)$
+time complexity ไม่ได้บอกเวลาที่แน่ชัดในการรัน แต่บอกแค่เวลาคร่าวๆ ในตัวอย่างถัดไป โค้ดจะรันโดยใช้เวลา $3n$, $n+5$, $\left\lceil\frac{n}{2}\right\rceil$ แต่ time complexity ยังเป็น $O(n)$
 
 ```cpp
 for(int i = 1; i <= 3*n; ++i) {
@@ -141,13 +141,13 @@ void g(int n) {
 
 - $O(1)$ คือ constant-time algorithm ที่ไม่ขึ้นอยู่กับขนาดของ input
 
-- $O(log n)$ คือ logarithmic algorithm ที่แบ่งครึ่งขนาดของ input ในแต่ละครั้ง เวลาในการรันของอัลกอริทึมเป็น logarithmic เพราะว่า $log_2 n$ เท่ากับจำนวนครั้งที่ $n$ ที่หารด้วย 2 จนได้ 1.
+- $O(\log n)$ คือ logarithmic algorithm ที่แบ่งครึ่งขนาดของ input ในแต่ละครั้ง เวลาในการรันของอัลกอริทึมเป็น logarithmic เพราะว่า $log_2 n$ เท่ากับจำนวนครั้งที่ $n$ ที่หารด้วย 2 จนได้ 1.
 
-- $O(sqrt{n})$ คือ square root algorithm จะช้ากว่า $O(log n)$ แต่เร็วกว่า $O(n)$ สมบัติพิเศษของ square root คือ $sqrt{n} = n / sqrt{n}$
+- $O(\sqrt{n})$ คือ square root algorithm จะช้ากว่า $O(\log n)$ แต่เร็วกว่า $O(n)$ สมบัติพิเศษของ square root คือ $sqrt{n} = n / \sqrt{n}$
 
 - $O(n)$ คือ linear algorithm จะรันเท่ากับขนาดของ input
 
-- $O(n log n)$ time complexity นี้จะใช้ใน sort ข้อมูลนำเข้า เพราะว่า time complexity ของ sorting algorithm คือ $O(n log n)$ อีกอย่างที่เป็นไปได้คือ algorthm ใช้ data structure ที่แต่ละ operation ใช้เวลา $O(log n)$
+- $O(n \log n)$ time complexity นี้จะใช้ใน sort ข้อมูลนำเข้า เพราะว่า time complexity ของ sorting algorithm คือ $O(n \log n)$ อีกอย่างที่เป็นไปได้คือ algorthm ใช้ data structure ที่แต่ละ operation ใช้เวลา $O(\log n)$
 
 - $O(n^2)$ คือ quadratic algorithm ที่ประกอบด้วย nested loop 2 ชั้น เป็นไปได้ที่รับคู่อันดับของ input ใน $O(n^2)$
 
