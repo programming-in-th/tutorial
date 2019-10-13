@@ -118,7 +118,7 @@ struct pq {
 priority_queue<pq> Q;
 ```
 
-ในอีกหลายกรณี เราอาจจะต้องการ minimum priority_queue แทนที่จะเป็น maximum priority_queue ของ primitive type บางอย่าง (เช่น int หรือ double เป็นต้น) ซึ่งสามารถทำได้ดังต่อไปนี้
+ในอีกหลายกรณี เราอาจจะต้องการ minimum priority_queue แทนที่จะเป็น maximum priority_queue ของ type บางอย่างที่มี comparator อยู่แล้ว (เช่น int หรือ pair<double, double> เป็นต้น) ซึ่งสามารถทำได้ดังต่อไปนี้
 
 ```cpp
 priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>>
