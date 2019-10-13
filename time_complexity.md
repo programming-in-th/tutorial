@@ -34,7 +34,7 @@ for(int i = 1; i <= n; ++i) {
 
 ### Order of magnitude
 
-time complexity ไม่ได้บอกเวลาที่แน่ชัดในการรัน แต่บอกแค่เวลาคร่าวๆ ในตัวอย่างถัดไป โค้ดจะรันโดยใช้เวลา $3n$, $n+5$, $\left\lceil\frac{n}{2}\right\rceil$ แต่ time complexity ยังเป็น $O(n)$
+time complexity ไม่ได้บอกเวลาที่แน่ชัดในการรัน แต่บอกแค่เวลาคร่าวๆ ในตัวอย่างถัดไป โค้ดจะรันโดยใช้เวลา $3n$, $n+5$, $\left\lfloor\frac{n}{2}\right\rfloor$ แต่ time complexity ยังเป็น $O(n)$
 
 ```cpp
 for(int i = 1; i <= 3*n; ++i) {
@@ -143,7 +143,7 @@ void g(int n) {
 
 - $O(\log n)$ คือ logarithmic algorithm ที่แบ่งครึ่งขนาดของ input ในแต่ละครั้ง เวลาในการรันของอัลกอริทึมเป็น logarithmic เพราะว่า $log_2 n$ เท่ากับจำนวนครั้งที่ $n$ ที่หารด้วย 2 จนได้ 1.
 
-- $O(\sqrt{n})$ คือ square root algorithm จะช้ากว่า $O(\log n)$ แต่เร็วกว่า $O(n)$ สมบัติพิเศษของ square root คือ $sqrt{n} = n / \sqrt{n}$
+- $O(\sqrt{n})$ คือ square root algorithm จะช้ากว่า $O(\log n)$ แต่เร็วกว่า $O(n)$ สมบัติพิเศษของ square root คือ $sqrt{n} = \frac{n}{\sqrt{n}}$
 
 - $O(n)$ คือ linear algorithm จะรันเท่ากับขนาดของ input
 
