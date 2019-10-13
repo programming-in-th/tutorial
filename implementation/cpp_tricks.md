@@ -154,4 +154,4 @@ sort(vec.begin(), vec.end(), cmp);
 2. `__builtin_clz(x)` จะคืนค่าเท่ากับจำนวน leading zero ใน binary representation ของ x (x ต้องเป็น int) เราสามารถใช้ function นี้หา log ฐานสองได้จากคำสั่ง `31 - __builtin_clz(x)`
 3. `__builtin_clzll(x)` เหมือน `__builtin_clz(x)` แต่ x ต้องเป็น long long การหา log ฐานสองให้ใช้ `63 - __builtin_clzll(x)`
 4. `__builtin_popcount(x)` จะคืนค่าเท่ากับจำนวน bit ที่เป็น 1 ใน binary representation ของ x (x ต้องเป็น int)
-5. `__builtin_poopcountll(x)` เหมือน `__builtin_popcount(x)` แต่ x ต้องเป็น long long
+5. `__builtin_popcountll(x)` เหมือน `__builtin_popcount(x)` แต่ x ต้องเป็น long long
