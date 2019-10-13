@@ -193,4 +193,4 @@ if (abs(a-b) < 1e-9) {
 }
 ```
 
-Attribution: [Competitive Programmer's Handbook by Antii Laaksonen](https://github.com/pllk/cphb/), licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+Attribution: [Competitive Programmer's Handbook by Antti Laaksonen](https://github.com/pllk/cphb/), licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
