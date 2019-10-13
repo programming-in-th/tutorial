@@ -125,17 +125,13 @@ void g(int n) {
 
 ในกรณีนี้ function ได้เรียก function เดิมอีก 2 รอบยกเว้นกรณี $n = 1$ เราจะแสดงตารางในการเรียก function
 
-$\begin{center}
-\begin{tabular}{rr}
-เรียก function & จำนสนครั้งที่เรียก \\
-\hline
-$g(n)$ & 1 \\
-$g(n-1)$ & 2 \\
-$g(n-2)$ & 4 \\
-$\cdots$ & $\cdots$ \\
-$g(1)$ & $2^{n-1}$ \\
-\end{tabular}
-\end{center}$
+| เรียก function | จำนวนครั้งที่เรียก |
+| -------------- | ------------------ |
+| $g(n)$         | 1                  |
+| $g(n-1)$       | 2                  |
+| $g(n-2)$       | 4                  |
+| $\cdots$       | $\cdots$           |
+| $g(1)$         | $2^{n-1}$          |
 
 จากตาราง time complexity คือ $1+2+4+\cdots+2^{n-1} = 2^n-1 = O(2^n)$
 
@@ -171,18 +167,14 @@ $g(1)$ & $2^{n-1}$ \\
 
 ตารางข้างล่างแสดงถึง time complexity ที่เหมาะสมในการรันโปรแกรม 1 วินาที สำหรับแต่ละขนาดของ input
 
-$\begin{center}
-\begin{tabular}{ll}
-input size & required time complexity \\
-\hline
-$n \le 10$ & $O(n!)$ \\
-$n \le 20$ & $O(2^n)$ \\
-$n \le 500$ & $O(n^3)$ \\
-$n \le 5000$ & $O(n^2)$ \\
-$n \le 10^6$ & $O(n \log n)$ or $O(n)$ \\
-$n$ is large & $O(1)$ or $O(\log n)$ \\
-\end{tabular}
-\end{center}$
+| Input size   | Required Time Complexity |
+| ------------ | ------------------------ |
+| $n \le 10$   | $O(n!)$                  |
+| $n \le 20$   | $O(2^n)$                 |
+| $n \le 500$  | $O(n^3)$                 |
+| $n \le 5000$ | $O(n^2)$                 |
+| $n \le 10^6$ | $O(n \log n)$ or $O(n)$  |
+| $n$ is large | $O(1)$ or $O(\log n)$    |
 
 ตัวอย่างเช่น ขนาดของ input คือ $n = 10^5$ สามารถใช้อัลกอริทึมในการรันเป็น $O(n)$ หรือ $O(n log n)$ ข้อมูลนี้ทำให้การออกแบบอัลกอริทึมง่ายขึ้น เนื่องจากทำให้คุณสามารถรู้ได้ว่าอัลกอริทึมไหนประสิทธิภาพต่ำที่สุด
 
