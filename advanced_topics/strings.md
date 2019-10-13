@@ -17,9 +17,9 @@ Strings
 ## Suffix Array Construction with Prefix Doubling
 
 When the array of strings is composed of only suffixes, a very beneficial property manifests. Assuming the suffix array is already sorted by the first $2^i$ cells, we need to further sort it by the **next** (not last) $2^i$ cells. However, the order of the next $2^i$ cells is already known from our previous work because it is, itself, a suffix. Therefore, we can keep on doubling the prefix and sort it by the order of the last $2^i$ cells.
-
+<br />
 Implementation:
-
+<br />
 ```c
 // pos = position of suffix i in suffix array
 // tmp = cumulative sum of inequalities
@@ -39,16 +39,16 @@ for(gap = 1;; gap <<= 1) {
   if(tmp[n - 1] == n - 1) break; // if every adjacent index is not equal (sorted completely)
 }
 ```
-
+<br />
 ## Kasai's algorithm
 Observation: given two suffixes with positions in the **suffix array** $i$, $i+1$ = $sa[i]$, $sa[i+1]$ and $LCP(sa[i], sa[i+1]) > 0$, if we remove the first character of both $sa[i]$ and $sa[i+1]$, then the new $LCP(sa[j], sa[j+1]) \geq LCP(sa[i], sa[i+1]) - 1$
-
+<br />
 We can spawn $sa[j]$, since removal of the first character also gives a suffix, therefore it can be found in the suffix array.
-
+<br />
 In the algorithm, we will iterate **positions in the string** (not SA!) to guarantee that we remove the first character in each step, and move on to another suffix (from $sa[i]$ to $sa[j]$). The whole reason behind having to remove the first character is to guarantee $O(n)$ time. Since the new LCP ≥ old LCP - 1, all we need to do is increase the LCP until it is no longer possible.
-
+<br />
 Implementation:
-
+<br />
 ```c
 // pos is the position of suffix i in the suffix array
 for(int i = 0; i < n; i++, k = (k ? k-1 : 0)) {
@@ -61,6 +61,6 @@ for(int i = 0; i < n; i++, k = (k ? k-1 : 0)) {
   lcp[pos[i]] = k; // in implementation, lcp is defined on positions in SA rather than strings themselves
 }
 ```
-
+<br />
 The running time is $O(n)$ because $k$ is decreased only $n$ times, and $k$ can only be incremented up to $n$, therefore total number of operations $\leq 2n$
 
