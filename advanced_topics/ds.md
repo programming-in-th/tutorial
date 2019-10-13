@@ -1,5 +1,6 @@
 # Advanced Data Structures
 
+- General data structures: [Algorthm Gym](https://codeforces.com/blog/entry/15729)
 - Segment trees
   - Iterative version: [Link](https://codeforces.com/blog/entry/18051)
   - Binary search in $O(\log n)$ as opposed to $O(\log^2 n)$ on segment tree: See [Solution for Codeforces 786C](https://codeforces.com/contest/786/submission/28673373)
