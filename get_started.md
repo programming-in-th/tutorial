@@ -53,17 +53,17 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 โดยเราต้องทำการเข้าไปที่หน้า [Download](https://osdn.net/projects/mingw/releases/) ของ MinGW หลังจากนั้นทำการ Download file ที่ชื่อว่า `mingw-get-setup.exe`
 
-![MinGW Website](./MinGW.png)
+![MinGW Website](https://github.com/programming-in-th/tutorial/raw/master/MinGW.png)
 
 พอเราทำการติดตั้งตามตัวช่วยติดตั้งไปเรื่อย ๆ ก็จะเป็นอันเสร็จสิ้นการติดตั้ง MinGW ลงใน `C:\MinGW` แต่เรายังไม่สามารถใช้งานได้ในตอนนี้ เราต้องทำการเพิ่ม `bin` ของ MinGW ลงใน path เสียก่อน
 
 เราสามารถเพิ่ม Path ได้โดยเข้าไปใน Control Panel และทำการ search ในช่องว่า `Edit environment variables for your account` 
 
-![Environment Variable 1](./path1.png)
+![Environment Variable 1](https://github.com/programming-in-th/tutorial/raw/master/path1.png)
 
 หลังจากนั้นกด Edit ที่ PATH แล้วทำการใส่ `C:\MinGW\bin` ลงไปโดยการกดปุ่ม New และพิม `C:\MinGW\bin` ลงไปในช่อง
 
-![New Path ENV](./path2.png)
+![New Path ENV](https://github.com/programming-in-th/tutorial/raw/master/path2.png)
 
 หลังจากนั้นเราทำการเปิด Command Prompt ขึ้นมา ก็จะพบว่าเราสามารถใช้ g++ ได้แล้ว โดยสามารถทดสอบด้วยคำสั่ง
 
