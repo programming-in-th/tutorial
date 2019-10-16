@@ -7,6 +7,7 @@
   - LiChao Trees
     - Implementation #1 (by adamant): [Link](https://cp-algorithms.com/geometry/convex_hull_trick.html)
     - Implementation #2 (by szawinis, dynamic version of minimum LCT): [Link](https://codeforces.com/contest/932/submission/51400890)
+    - Implementation #3 (by win11905, persistent of minimum LCT): [Link](https://github.com/win11905/submission/blob/master/CEOI/09/harbingers.cpp)
   - Optimization for monotone style
     - WCIPEG (read this first): [Link](https://wcipeg.com/wiki/Convex_hull_trick)
     - meooow's article: [Link](https://codeforces.com/blog/entry/63823)
