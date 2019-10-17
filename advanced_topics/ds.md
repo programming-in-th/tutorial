@@ -29,3 +29,6 @@
   - Implementation of XXXXXXXX: [Link](https://github.com/szawinis/CompetitiveProgramming/blob/master/SPOJ/XXXXXXXX.cpp)
 - Link cut trees: [Link](https://www.youtube.com/watch?v=XZLN6NxEQWo)
 - vEB trees: [Link](https://www.youtube.com/watch?v=hmReJCupbNU)
+- Fast Fourier Transform: [Link1](https://csacademy.com/blog/fast-fourier-transform-and-variations-of-it) [Link2](https://codeforces.com/blog/entry/43499)
+- Number Theoric Transform: [Link](https://codeforces.com/blog/entry/48798)
+- Linear Sieve of Eratosthenes: [Link](https://codeforces.com/blog/entry/54090)

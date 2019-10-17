@@ -1,7 +1,9 @@
 # Strings
 
 ## Topics List
+
 Strings
+
 - Hashing
   - Guide to polynomial hashing: [Link](https://www.mii.lt/olympiads_in_informatics/pdf/INFOL119.pdf)
   - Simple polynomial hashing guidelines: [Link](https://codeforces.com/blog/entry/52697)
@@ -13,6 +15,7 @@ Strings
   - A suffix array is a lexicographically sorted array of all of a string's suffixes. In order to save space, we usually only store the first index of the suffix rather than the actual string representation of the suffix.
   - LCP stands for the longest common prefix of two strings, which indicates the maximum integer $k$ where the first $k$ characters of both strings are the same.
   - Full explanation and implementation of Suffix Array can be found below
+- Z Algorithm: [Link](https://www.hackerearth.com/practice/algorithms/string-algorithm/z-algorithm/tutorial/)
 
 ## Suffix Array Construction with Prefix Doubling
 
@@ -41,6 +44,7 @@ for(gap = 1;; gap <<= 1) {
 ```
 
 ## Kasai's algorithm
+
 Observation: given two suffixes with positions in the **suffix array** $i$, $i+1$ = $sa[i]$, $sa[i+1]$ and $LCP(sa[i], sa[i+1]) > 0$, if we remove the first character of both $sa[i]$ and $sa[i+1]$, then the new $LCP(sa[j], sa[j+1]) \geq LCP(sa[i], sa[i+1]) - 1$
 
 We can spawn $sa[j]$, since removal of the first character also gives a suffix, therefore it can be found in the suffix array.
@@ -63,4 +67,3 @@ for(int i = 0; i < n; i++, k = (k ? k-1 : 0)) {
 ```
 
 The running time is $O(n)$ because $k$ is decreased only $n$ times, and $k$ can only be incremented up to $n$, therefore total number of operations $\leq 2n$
-
