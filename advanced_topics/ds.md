@@ -6,6 +6,7 @@
   - Binary search in $O(\log n)$ as opposed to $O(\log^2 n)$ on segment tree: See [Solution for Codeforces 786C](https://codeforces.com/contest/786/submission/28673373)
   - Full explanation (including persistency, 2D, lazy propagation): [Link](https://cp-algorithms.com/data_structures/segment_tree.html)
   - Persistent segment tree problems: [Link](https://codeforces.com/blog/entry/56880)
+  - Segment Tree Beats: [Link](https://codeforces.com/blog/entry/57319)
 - Fenwick trees
   - Traditional Fenwick trees: [Link](https://www.hackerearth.com/practice/notes/binary-indexed-tree-or-fenwick-tree/)
   - Fenwick trees with range updates and point queries: [Link](https://stackoverflow.com/questions/27875691/need-a-clear-explanation-of-range-updates-and-range-queries-binary-indexed-tree)
