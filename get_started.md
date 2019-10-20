@@ -1,10 +1,8 @@
-# เริ่มต้นกับการเขียนโปรแกรมด้วยภาษา C++
-
 การที่เราจะรันโปรแกรมที่เขียนด้วยภาษา C++ ได้นั้นเราต้องมีสิ่งที่เรียกว่า compiler เสียก่อน ซึ่ง compiler จะทำหน้าที่ในการแปลงโค้ดที่เราเขียนไปเป็น binary file ทำให้ OS เราสามารถรันได้นั่นเอง
 
 Compiler นั้นมีหลายตัวให้เราใช้ แต่ตัวที่ฮิตที่สุดน่าจะหนีไม่พ้น [GCC](https://gcc.gnu.org/) หรือ GNU Compiler Collection นั่นเอง (Default ใน macOS ใช้ clang) ซึ่งเราจะมาดูวิธีการติดตั้ง GCC กันทั้งใน macOS และ Windows
 
-## การติดตั้งใน macOS
+# การติดตั้งใน macOS
 
 ขั้นแรก เราต้องทำการติดตั้ง `Xcode Command Line Tools` เสียก่อน โดยเราต้องทำการเปิด `Terminal.app` ขึ้นมา และพิมพ์คำสั่ง
 
@@ -47,7 +45,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ถือว่าเป็นอันสำเร็จในการติดตั้ง GCC ใน macOS
 
-## การติดตั้งใน Windows (ทางเลือกที่ 1)
+# การติดตั้งใน Windows (ทางเลือกที่ 1)
 
 ทางเลือกแรก เราสามารถติดตั้ง GCC ด้วย [MinGW](http://www.mingw.org/) ที่ย่อมาจาก Minimalist GNU for Windows
 
@@ -57,7 +55,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 พอเราทำการติดตั้งตามตัวช่วยติดตั้งไปเรื่อย ๆ ก็จะเป็นอันเสร็จสิ้นการติดตั้ง MinGW ลงใน `C:\MinGW` แต่เรายังไม่สามารถใช้งานได้ในตอนนี้ เราต้องทำการเพิ่ม `bin` ของ MinGW ลงใน path เสียก่อน
 
-เราสามารถเพิ่ม Path ได้โดยเข้าไปใน Control Panel และทำการ search ในช่องว่า `Edit environment variables for your account` 
+เราสามารถเพิ่ม Path ได้โดยเข้าไปใน Control Panel และทำการ search ในช่องว่า `Edit environment variables for your account`
 
 ![Environment Variable 1](https://github.com/programming-in-th/tutorial/raw/master/path1.png)
 
@@ -80,7 +78,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-## การติดตั้งใน Windows (ทางเลือกที่ 2)
+# การติดตั้งใน Windows (ทางเลือกที่ 2)
 
 เราสามารถใช้ Linux ใน Windows ได้โดยการใช้ Windows Subsystem for Linux ซึ่งสามารถเปิดใช้งานได้ด้วยวิธีตามลิงก์[นี้](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 

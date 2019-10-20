@@ -1,6 +1,4 @@
-# Strings
-
-## Topics List
+# Topics List
 
 Strings
 
@@ -17,7 +15,7 @@ Strings
   - Full explanation and implementation of Suffix Array can be found below
 - Z Algorithm: [Link](https://www.hackerearth.com/practice/algorithms/string-algorithm/z-algorithm/tutorial/)
 
-## Suffix Array Construction with Prefix Doubling
+# Suffix Array Construction with Prefix Doubling
 
 When the array of strings is composed of only suffixes, a very beneficial property manifests. Assuming the suffix array is already sorted by the first $2^i$ cells, we need to further sort it by the **next** (not last) $2^i$ cells. However, the order of the next $2^i$ cells is already known from our previous work because it is, itself, a suffix. Therefore, we can keep on doubling the prefix and sort it by the order of the last $2^i$ cells.
 
@@ -43,7 +41,7 @@ for(gap = 1;; gap <<= 1) {
 }
 ```
 
-## Kasai's algorithm
+# Kasai's algorithm
 
 Observation: given two suffixes with positions in the **suffix array** $i$, $i+1$ = $sa[i]$, $sa[i+1]$ and $LCP(sa[i], sa[i+1]) > 0$, if we remove the first character of both $sa[i]$ and $sa[i+1]$, then the new $LCP(sa[j], sa[j+1]) \geq LCP(sa[i], sa[i+1]) - 1$
 

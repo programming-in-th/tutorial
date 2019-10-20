@@ -1,14 +1,12 @@
-# การวัดประสิทธิภาพของอัลกอริทึม
-
 อัลกอริทึมที่มีประสิทธิภาพเป็นส่วนที่สำคัญในการแข่งขันเขียนโปรแกรม โดยทั่วไปเป็นเรื่องที่ง่ายที่จะออกแบบอัลกอริทึม ที่แก้ปัญหาโดยที่ใช้เวลามาก แต่ความจริงเราต้องการอัลกอริทึมที่สามารถแก้ปัญหาได้รวดเร็ว ถ้าอัลกอริทึมนั้นช้าจะได้คะแนนเพียงบางส่วนเท่านั้น
 
 Time complexity ของ อัลกอริทึมคือเวลาที่ใช้ในการรันสำหรับบาง input ไอเดียคือสร้าง function ที่รับขนาดของ input การคำนวณ time complexity เราสามารถรู้ได้ว่าอัลกอริทึมนั้นเร็วแค่ไหนโดยที่ยังไม่ได้เขียน
 
-## กฏในการคำนวณ
+# กฏในการคำนวณ
 
 time complexity ของอัลกอริทึม นิยามโดย $O(...)$ โดยที่ $...$ แสดงถึงบางฟังก์ชัน โดยทั่วไป ตัวแปร $n$ คือขนาดของ input ตัวอย่างเช่น ถ้า input คือ array ตัวเลข, $n$ จะเป็นขนาดของ array และถ้า input คือ string, $n$ จะเป็นความยาวของ string
 
-### Loops
+## Loops
 
 โดยทั่วไปอัลกอริทึมจะทำงานได้ช้าก็ต่อเมื่ออัลกอริทึมนั้นมีหลาย loop
 
@@ -32,7 +30,7 @@ for(int i = 1; i <= n; ++i) {
 }
 ```
 
-### Order of magnitude
+## Order of magnitude
 
 time complexity ไม่ได้บอกเวลาที่แน่ชัดในการรัน แต่บอกแค่เวลาคร่าวๆ ในตัวอย่างถัดไป โค้ดจะรันโดยใช้เวลา $3n$, $n+5$, $\left\lfloor\frac{n}{2}\right\rfloor$ แต่ time complexity ยังเป็น $O(n)$
 
@@ -64,7 +62,7 @@ for(int i = 1; i <= n; ++i) {
 }
 ```
 
-### Phases
+## Phases
 
 ถ้าอัลกอริทึมมีหลาย phase, time complexity รวมจะเป็น phase ของ time complexity ที่ใหญ่ที่สุด
 
@@ -84,7 +82,7 @@ for(int i = 1; i <= n; ++i) {
 }
 ```
 
-### Serval varialbe
+## Serval varialbe
 
 ในบางครั้ง time complexity มีหลายตัวแปร ในกรณีนี้ time complexity สามารถมีหลายตัวแปรได้
 
@@ -98,7 +96,7 @@ for(int i = 1; i <= n; ++i) {
 }
 ```
 
-### Recursion
+## Recursion
 
 time complexity ของ recursive function ขึ้นอยู่กับจำนวนครั้งที่ function ได้ถูกเรียก และ time complexity ของการเรียกครั้งเดียว, time complexity รวมคือผลคูณของทั้งสองอย่างนี้
 
@@ -135,7 +133,7 @@ void g(int n) {
 
 จากตาราง time complexity คือ $1+2+4+\cdots+2^{n-1} = 2^n-1 = O(2^n)$
 
-## Complexity classes
+# Complexity classes
 
 ด้านล่างคือ time complexity ที่พบเจอได้บ่อยในการเขียนอัลกอริทึม
 
@@ -159,7 +157,7 @@ void g(int n) {
 
 อัลกอริทึมที่เป็น polynomial time algorithm จะรันอย่างมาก $O(n^k)$ โดยที่ $k$ เป็นค่าคงที่
 
-## Estimating efficiency
+# Estimating efficiency
 
 ในการคำนวน time complexity ของอัลกอริทึม นั้นสามารถใช้ได้โดยที่ 1 วินาที จะรันได้ประมาณ 100,000,000 คำสั่ง
 

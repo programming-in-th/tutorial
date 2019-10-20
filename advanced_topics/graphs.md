@@ -1,5 +1,3 @@
-# Advanced Graph Algorithms
-
 - General graphs: [Algorithms Gym](https://codeforces.com/blog/entry/16221)
 - Maximum flow
   - König's Theorem

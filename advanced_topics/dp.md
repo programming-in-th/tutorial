@@ -1,5 +1,3 @@
-# Advanced DP
-
 - SOS DP: [Link](https://codeforces.com/blog/entry/45223)
 - zscoder's Non-trivial DP Tricks (very useful): [Link](https://codeforces.com/blog/entry/47764)
 - Slope trick: [Link](https://codeforces.com/blog/entry/47821)

@@ -1,5 +1,3 @@
-# Advanced Data Structures
-
 - General data structures: [Algorthm Gym](https://codeforces.com/blog/entry/15729)
 - Segment trees
   - Iterative version: [Link](https://codeforces.com/blog/entry/18051)
