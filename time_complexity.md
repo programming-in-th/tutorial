@@ -82,7 +82,7 @@ for(int i = 1; i <= n; ++i) {
 }
 ```
 
-## Serval varialbe
+## Several variables
 
 ในบางครั้ง time complexity มีหลายตัวแปร ในกรณีนี้ time complexity สามารถมีหลายตัวแปรได้
 
