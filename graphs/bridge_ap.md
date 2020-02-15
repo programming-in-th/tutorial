@@ -1,4 +1,4 @@
-# Bridges and Articulation Point
+# Bridges and Articulation Points
 
 กำหนดกราฟที่เชื่อมต่อกัน (Connected Graph) มาให้ เราจะเรียก node `u` ว่าเป็น Articulation Point (หรือ Cut Vertex) ก็ต่อเมื่อ การตัด node `u` ออก จะทำให้กราฟขาดออกจากกัน (ไม่ connected)
 
